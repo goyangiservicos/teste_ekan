@@ -43,3 +43,7 @@ Acesse a Documentação da API:
 Depois que a aplicação estiver rodando, você pode acessar a documentação gerada pelo Swagger no seu navegador, usando a URL:
 http://localhost:8080/swagger-ui.html
 
+http://localhost:8080/beneficiarios/
+http://localhost:8080/beneficiarios/{id}
+http://localhost:8080/documentos
+http://localhost:8080/documentos/beneficiario/{id}
