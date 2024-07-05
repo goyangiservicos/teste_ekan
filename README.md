@@ -15,3 +15,31 @@ Depois, desenvolvi controladores REST para expor endpoints que permitissem a int
 Usei o Postman para testar os endpoints da API. Configurei uma requisição POST para criar um documento, incluindo todos os dados necessários e a associação com um beneficiário existente.
 
 Rodei a aplicação e acessei a documentação gerada pelo Swagger para verificar se estava tudo certo. Fiz testes no Postman para garantir que os dados estavam sendo salvos corretamente no banco de dados.
+
+
+Passo a Passo para Rodar o Projeto:
+
+Clone o Repositório do GitHub:
+Primeiro, clone o repositório do projeto para a sua máquina. Abra o terminal e execute o comando:
+https://github.com/{usuario}/teste_ekan.git
+git@github.com: {usuario}/teste_ekan.git
+Navegue até o Diretório do Projeto:
+Vá até o diretório onde o projeto foi clonado:
+cd teste_ekan
+Verifique as Dependências:
+Precisa de ter o Maven e o JDK 17 instalados na sua máquina. Você pode verificar as versões instaladas com os comandos:
+mvn -v
+java -version
+Instale as Dependências do Projeto:
+No diretório raiz do projeto, execute o comando para baixar e instalar todas as dependências do projeto definidas no pom.xml:
+mvn clean install
+Configure o Banco de Dados:
+O projeto está configurado para usar um banco de dados H2 em memória para testes. 
+
+Execute a Aplicação:
+Para rodar a aplicação, use o comando:
+mvn spring-boot:run
+Acesse a Documentação da API:
+Depois que a aplicação estiver rodando, você pode acessar a documentação gerada pelo Swagger no seu navegador, usando a URL:
+http://localhost:8080/swagger-ui.html
+
